@@ -21,18 +21,48 @@
     <div class="header-bar">
         Economy Calculator
     </div>
-    <div class="input-container">
-        <div class="input-group">
-            <input class="c-field" type="text">
-            <input class="c-field" type="text">
-        </div>
+    <div class="container">
+        <div class="input-container">
+            <div class="input-group" style="margin-right:10px;">
 
-        <div class="input-group">
-            <input class="c-field" type="text">
-            <input class="c-field" type="text">
+                <div>Inkomst 1</div>
+                <input class="c-field" type="text" />
+                <br/>
+                <div>Utgifter 1</div>
+                <input class="c-field" type="text" />
+            </div>
+
+            <div class="input-group" style="margin-left:10px;">
+                <div>Inkomst 2</div>
+                <input class="c-field" type="text" />
+                <br/>
+                <div>Utgifter 2</div>
+                <input class="c-field" type="text" />
+            </div>
+        </div>
+        <div class="calculate-btn-container">
+            <button class="c-button c-button--success c-button--block">Räkna ut</button>
+        </div>
+        <div>
+            <b>Person 1</b> är skyldig <b>person 2</b>
+            <div class="owed-money-text">
+                <img src="moneyicon.png" class="money-icon" />
+                <div class="result-money">3000 kr</div>
+            </div>
+            <div class="total-income-text">
+                <div class="result-info-text">Totala inkomster:</div>
+                <b>40000 kr</b>
+            </div>
+            <div>
+                <div class="result-info-text">Totala utgifter:</div>
+                <b>40000 kr</b>
+            </div>
         </div>
     </div>
-    <button class="c-button c-button--success">Button12</button>
+
+
+
+
 
 </body>
 

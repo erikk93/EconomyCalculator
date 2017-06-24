@@ -2,18 +2,52 @@ body{
     font-family: 'Roboto', sans-serif; 
 }
 .header-bar{
-
     background-color: #6abe6e;
     padding: 20px;
     color: #fff;
     text-align: center;
-    font-size: 30px
+    font-size: 30px;
 }
 
 .input-group {
-    flex:1
+    flex:1;
 }
 .input-container{
     flex-direction: row;
     display: flex;
+}
+.container{
+    padding: 20px;
+}
+.calculate-btn-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.money-icon{
+    width: 50px;
+}
+.owed-money-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.result-money{
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-bottom: 40px;
+    color: #3e8f41;
+}
+
+.total-income-text{
+    margin-bottom: 6px;
+}
+
+.result-info-text{
+    width:126px;
+    display:inline-block;
 }
