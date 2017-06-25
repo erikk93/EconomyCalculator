@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="blaze.css">    
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="logic.js"></script>
 </head>
 
 <body>
@@ -26,36 +27,36 @@
             <div class="input-group" style="margin-right:10px;">
 
                 <div>Inkomst 1</div>
-                <input class="c-field" type="number" />
+                <input id="income1Input" class="c-field" type="number" />
                 <br/>
                 <div>Utgifter 1</div>
-                <input class="c-field" type="number" />
+                <input id="spending1Input" class="c-field" type="number" />
             </div>
 
             <div class="input-group" style="margin-left:10px;">
                 <div>Inkomst 2</div>
-                <input class="c-field" type="number" />
+                <input id="income2Input" class="c-field" type="number" />
                 <br/>
                 <div>Utgifter 2</div>
-                <input class="c-field" type="number" />
+                <input id="spending2Input" class="c-field" type="number" />
             </div>
         </div>
         <div class="calculate-btn-container">
-            <button class="c-button c-button--success c-button--block">Räkna ut</button>
+            <button class="c-button c-button--success c-button--block" onclick="calculate()">Räkna ut</button>
         </div>
-        <div>
-            <b>Person 1</b> är skyldig <b>person 2</b>
+        <div id="resultContainer" style="display: none;">
+            <div id="whoOwesWhoText"></div>
             <div class="owed-money-text">
                 <img src="moneyicon.png" class="money-icon" />
-                <div class="result-money">3000 kr</div>
+                <div id="resultText" class="result-money"></div>
             </div>
             <div class="total-income-text">
                 <div class="result-info-text">Totala inkomster:</div>
-                <b>40000 kr</b>
+                <b><span id="totalIncomeText"></span></b>
             </div>
             <div>
                 <div class="result-info-text">Totala utgifter:</div>
-                <b>40000 kr</b>
+                <b><span id="totalSpendingText"></span></b>
             </div>
         </div>
     </div>
